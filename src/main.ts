@@ -2,7 +2,7 @@ import { Logger } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
 import {
   DocumentBuilder,
-  SwaggerCustomOptions,
+  type SwaggerCustomOptions,
   SwaggerModule,
 } from "@nestjs/swagger";
 import { cleanupOpenApiDoc } from "nestjs-zod";

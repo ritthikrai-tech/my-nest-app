@@ -1,16 +1,12 @@
-import { Module } from "@nestjs/common";
-import { ConfigModule } from "@nestjs/config";
-import { APP_PIPE } from "@nestjs/core";
-import { ZodValidationPipe } from "nestjs-zod";
-import { UsersModule } from "../users/users.module";
-import { HealthModule } from "../health/health.module";
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { APP_PIPE } from '@nestjs/core';
+import { ZodValidationPipe } from 'nestjs-zod';
+import { UsersModule } from '../users/users.module';
+import { HealthModule } from '../health/health.module';
 
 @Module({
-  imports: [
-    ConfigModule.forRoot({ isGlobal: true }),
-    HealthModule,
-    UsersModule,
-  ],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), HealthModule, UsersModule],
   controllers: [],
   providers: [
     {
